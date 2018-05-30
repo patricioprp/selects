@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::resource('states','StateController');
 Route::get('towns/{id}','StateController@getTowns');
+Route::get('locations/{id}','TownController@getLocations');
